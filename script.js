@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
         document.querySelector('.preloader').style.display = 'none';
         document.querySelector('.personal-website').style.display = 'block';
         document.querySelector('.tab-bar').style.display = 'block';
-    }, 0);
+    }, 2500);
 });
 // window.addEventListener("resize", changePage);
 // let currentPage = 'sublime version';
