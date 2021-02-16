@@ -1,91 +1,94 @@
-*{
+* {
   margin: 0px;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   /* font-family: 'Source Code Pro', monospace; */
   /* font-family: 'Space Mono', monospace; */
   /* font-family: 'Syne Mono', monospace; */
-  font-family: 'VT323', monospace;
-  font-size: 2.1vw; /*2.15, 1.75*/
+  font-family: "VT323", monospace;
+  font-size: 1.65rem; /*2.1, 1.65*/
   letter-spacing: 0.25vw; /*0.15, 0.25*/
   background-color: #272822;
 }
-.personal-website{
+.personal-website {
   display: none;
   margin: 8px;
 }
-.tab{
+.tab {
   display: inline-block;
   background-color: #272822;
   border-top: 2px solid black;
   padding: 6px;
   padding-left: 10px;
   padding-bottom: 3px;
-  font-size: 2.1vw;
+  font-size: 1.65rem;
   letter-spacing: 0.45vw;
   border-radius: 0px 5px 0px 0px;
 }
-.upper{
+.upper {
   text-transform: uppercase;
 }
-.fas{
+.fas {
   font-size: 1.5vw;
 }
-.fab{
+.tab .fas {
+  margin-left: 8px;
+}
+.fab {
   color: yellow;
   font-size: 1.55vw;
   margin-right: 5px;
 }
-.tab-bar .cancel{
+.tab-bar .cancel {
   color: #75715e;
 }
-.tab-bar .cancel:hover{
+.tab-bar .cancel:hover {
   color: #f8f8f2;
 }
-/*-----------------------------*/
-.comment{
+/*-------------colors----------------*/
+.comment {
   color: #75715e;
 }
-.collapsed{
+.collapsed {
   color: #464741;
 }
-.storage-type{
+.storage-type {
   color: #66d9ef;
 }
-.variable{
+.variable {
   color: #f8f8f2;
 }
-.assignment-operator{
+.assignment-operator {
   color: #f92672;
 }
-.string{
+.string {
   color: #e6db74;
 }
-.expression{
+.expression {
   color: #f8f8f2;
 }
-.number{
+.number {
   color: #ae81ff;
 }
-.loader{
+.loader {
   color: #899;
 }
-.path{
+.path {
   color: black;
 }
-.click{
+.click {
   color: green;
 }
-.tab-bar{
+.tab-bar {
   background-color: black;
   margin: 0px;
   display: none;
 }
 /*-----------------------------*/
-.line{
+.line {
   min-height: 1.35rem;
 }
 body::-webkit-scrollbar {
@@ -94,58 +97,98 @@ body::-webkit-scrollbar {
 textarea::-webkit-scrollbar {
   display: none;
 }
-.nav .comment:hover{
+.nav .comment:hover {
   color: #75715e;
 }
-.nav .white-space{
+.nav .white-space {
   color: white;
   visibility: hidden;
 }
-.edu-objects{
+.edu-objects {
   display: none;
 }
-.edu-objects:hover{
+.edu-objects:hover {
   cursor: zoom-out;
 }
-.expand:hover{
+.expand:hover {
   cursor: zoom-in;
   color: #75715e;
 }
-form > div{
+/* .nitt-elobrate {
+  display: none;
+} */
+.nitt-short{
+  display: none;
+}
+.nitt-short:hover {
+  cursor: zoom-in;
+}
+.nitt-elobrate:hover {
+  cursor: zoom-out;
+}
+.vbc-elobrate {
+  display: none;
+}
+.vbc-short:hover {
+  cursor: zoom-in;
+}
+.vbc-elobrate:hover {
+  cursor: zoom-out;
+}
+.kvmc-elobrate {
+  display: none;
+}
+.kvmc-short:hover {
+  cursor: zoom-in;
+}
+.kvmc-elobrate:hover {
+  cursor: zoom-out;
+}
+form > div {
   margin: 1rem 0px;
 }
-input, textarea{
+input,
+textarea,
+button {
   background-color: transparent;
   border: none;
   border-bottom: 3px dotted #75715e;
   caret-color: #e6db74;
-  font-family: 'VT323', monospace;
-  font-size: 2.1vw;
+  font-family: "VT323", monospace;
+  font-size: 1.65rem;
   letter-spacing: 0.25vw;
   color: #e6db74;
 }
-.submit input{
+.submit input {
   border: none;
   padding: 0px;
   color: green;
-  font-size: 2.1vw;
+  font-size: 1.65rem;
   letter-spacing: 0.25vw;
+  border-bottom: 3px dotted transparent;
 }
-.submit input:hover{
+.submit input:hover {
   border-bottom: 3px dotted green;
+  cursor: pointer;
 }
-input:focus, textarea:focus{
+input:focus,
+textarea:focus,
+button:focus {
   outline: none;
   border-color: green;
 }
-/*---link---*/
-a:link{
+.thanksMessage {
+  border-bottom: 3px dotted transparent;
+  display: none;
+}
+/*----------link-------------*/
+a:link {
   text-decoration: none;
 }
-a:visited{
+a:visited {
   color: #e6db74;
 }
-a:hover{
+a:hover {
   color: green;
 }
 /*---------preloader--------*/
@@ -157,18 +200,18 @@ a:hover{
   justify-content: center;
   color: #e6db74;
   font-family: Consolas, Menlo, Monaco, monospace;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-weight: bold;
   font-size: 15vh;
   opacity: 0.8;
 }
-.preloader span{
-    display: inline-block;
-    animation: pulse 0.4s alternate infinite ease-in-out;
+.preloader span {
+  display: inline-block;
+  animation: pulse 0.4s alternate infinite ease-in-out;
 }
 .preloader span:nth-child(odd) {
-      animation-delay: 0.4s;
-    }
+  animation-delay: 0.4s;
+}
 @keyframes pulse {
   to {
     transform: scale(0.8);
